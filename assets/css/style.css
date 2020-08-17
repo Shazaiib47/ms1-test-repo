@@ -23,6 +23,12 @@ a {
     justify-content: center;
 }
 
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 #hero {
     background-image: url(/assets/images/pexels-welcome.jpg);
     background-size: cover;
@@ -41,6 +47,13 @@ a {
     background-color: #000;
     opacity: .7;
     z-index: -1;
+}
+
+#hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
 }
 
 #hero h1 {
@@ -81,6 +94,94 @@ a {
 #hero .cta:hover {
     color: black;
     background-color: yellow;
+}
+
+.ourstory {
+        flex-direction: column;
+        text-align: center;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 100px 0;
+}
+
+#ourstory .section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: yellow;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.section-title span {
+    color: #ffbe3d;
+}
+
+.ourstory-first p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+
+.ourstory-last {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ourstory-item {
+   flex-basis: 80%;
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   flex-direction: column;
+   padding: 30px;
+   border-radius: 10px;
+   background-image: url(/assets/images/arc-bionics-logo.jpg);
+   background-size: cover;
+   margin: 10px 5%;
+   position: relative;
+}
+
+.ourstory-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .3;
+}
+
+.ourstory .ourstory-item .icon{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.ourstory .ourstory-item .icon img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ourstory-item h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.ourstory-item p {
+    color: #000;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1,9rem;
 }
 
 @keyframes text_reveal_box{
