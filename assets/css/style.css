@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:&display=swap');
 
-h1, h2, h3, {
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -63,6 +67,16 @@ img {
 .cta:hover {
     color: black;
     background-color: yellow;
+}
+
+.brand h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.brand h1 span {
+    color: #ffbe3d;
 }
 
 #hero {
@@ -371,6 +385,11 @@ img {
     align-items: center;
     flex-direction: column;
     box-shadow: 0px 0px 18px 0 #00002c;
+    transition: .3s ease box-shadow;
+}
+
+#contact .contact-detail:hover{
+    box-shadow: 0px 0px 5px 0 #00002c;
 }
 
 #contact .icon {
@@ -389,6 +408,39 @@ img {
     font-size: 1.1rem;
     line-height: 2rem;
     font-weight: 500;
+}
+
+#footer {
+    background-image: linear-gradient(90deg, rgba(136,109,5,1) 0%, rgba(242,179,30,1) 37%, rgba(121,93,12,1) 100%);
+}
+
+#footer .footer {
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#footer h2 {
+    color: black;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer .social-icon {
+    display: flex;
+    margin-bottom: 30px;
+    letter-spacing: 15px;
+
+}
+
+#footer .social-item {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
 }
 
 @keyframes text_reveal_box{
