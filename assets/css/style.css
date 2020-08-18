@@ -121,10 +121,10 @@ img {
         padding: 100px 0;
 }
 
-#ourstory .section-title {
+.section-title {
     font-size: 4rem;
     font-weight: 300;
-    color: yellow;
+    color: black;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -291,6 +291,7 @@ img {
     letter-spacing: 2px;
 }
 
+
 #about .col-left {
     width: 360px;
 }
@@ -318,7 +319,10 @@ img {
 }
 
 .col-left .about-img {
+    height: 100%;
+    width: 100%;
     position: relative;
+    border: 10px solid white;
 }
 
 .col-left .about-img::after {
@@ -334,6 +338,16 @@ img {
 
 #about .section-title{
     margin-top: 15px;
+}
+
+#about .section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
 }
 
 @keyframes text_reveal_box{
