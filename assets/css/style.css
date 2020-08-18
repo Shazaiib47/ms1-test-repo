@@ -260,6 +260,25 @@ img {
     margin-bottom: 15px;
 }
 
+.press-img::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(136,109,5,1) 0%, rgba(242,179,30,1) 37%, rgba(121,93,12,1) 100%);
+    opacity: .7;
+}
+
+#press .press-img img {
+    transition: .3s ease transform;
+}
+
+#press .press-item:hover .press-img img {
+    transform: scale(1.1);
+}
+
 @keyframes text_reveal_box{
     50% {
         width: 100%;
