@@ -443,6 +443,20 @@ img {
     margin: 0 5px;
 }
 
+#footer .social-item img{
+    filter: grayscale(5);
+    transition: .3s ease filter;
+}
+
+#footer .social-item:hover img {
+    filter: grayscale(0);
+}
+
+#footer p {
+    color: black;
+    font-size: 1.3rem;
+}
+
 @keyframes text_reveal_box{
     50% {
         width: 100%;
