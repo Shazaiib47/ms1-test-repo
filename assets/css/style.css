@@ -241,6 +241,25 @@ img {
     background-image: linear-gradient(90deg, rgba(136,109,5,1) 0%, rgba(242,179,30,1) 37%, rgba(121,93,12,1) 100%);
 }
 
+.press-info h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.press-info h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+#press .press-img {
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
 @keyframes text_reveal_box{
     50% {
         width: 100%;
