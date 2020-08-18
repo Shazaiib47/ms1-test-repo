@@ -131,6 +131,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .ourstory-item {
@@ -145,6 +146,7 @@ img {
    background-size: cover;
    margin: 10px 5%;
    position: relative;
+   overflow: hidden;
 }
 
 .ourstory-item::after{
